@@ -21,37 +21,13 @@ This repository collects the dependencies common to all Building Blocks projects
 
 ## Use the Copilot plugin
 
-### Install
+Building Block repositories declare the `bb-tools` marketplace and
+`bb-gh-utils` plugin in `.github/copilot/settings.json`. Supported clients install
+and activate the plugin for that repository; no manual global installation is
+required.
 
-Requires Copilot CLI and read access to this repository.
-
-```shell
-copilot plugin marketplace add pagopa/bb-gh-utils
-copilot plugin install bb-gh-utils@bb-tools
-copilot plugin list
-```
-
-Start a new Copilot session after installation.
-
-### Enable only for a VS Code workspace
-
-1. Run **Chat: Open Customizations** in the target workspace.
-2. Open **Plugins** > **bb-gh-utils**.
-3. Select **Disable** for the current profile if globally enabled.
-4. Select **Enable (Workspace)** from the dropdown.
-5. Start a new Copilot chat.
-
-Requires VS Code Copilot plugin support. Workspace activation applies to VS Code,
-not standalone CLI sessions; the CLI has no `install --scope workspace` option.
-
-### Update
-
-```shell
-copilot plugin marketplace update bb-tools
-copilot plugin update bb-gh-utils
-```
-
-Start a new Copilot session after updating.
+Requires read access to this repository. Keep the plugin disabled globally to
+avoid activating it in unrelated projects.
 
 **Known limitation:** automatic rule loading is not yet verified. Keep existing
 project instructions. See [validation status](docs/shared-ai.md#validation-status).
