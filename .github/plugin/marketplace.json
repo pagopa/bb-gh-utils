@@ -1,0 +1,14 @@
+{
+  "name": "bb-tools",
+  "owner": {
+    "name": "Building Block Team"
+  },
+  "plugins": [
+    {
+      "name": "bb-gh-utils",
+      "description": "Shared AI instructions and skills for PagoPA Building Blocks projects.",
+      "version": "0.1.0",
+      "source": "./plugins/bb-gh-utils"
+    }
+  ]
+}

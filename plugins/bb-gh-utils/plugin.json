@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bb-gh-utils",
+  "version": "0.1.0",
+  "description": "Shared AI instructions and skills for PagoPA Building Blocks projects.",
+  "repository": "https://github.com/pagopa/bb-gh-utils"
+}
